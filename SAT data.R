@@ -70,6 +70,7 @@ n_list_no_SAT_1 = n
 n_list_no_SAT_2 = n
 
 
+#Currently editing to streamline code and make operations faster
 for(k in 1:nrow(K)){
   #generate admissions scores for each student
   score = K[k, "alpha"] * n_list[, 2] + K[k, "beta"] * n_list[, 3] + (1 -  K[k, "alpha"] - K[k, "beta"]) * n_list[, 4]
